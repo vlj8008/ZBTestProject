@@ -37,25 +37,36 @@ async function getTeams(){
                 var teamName = promiseObj[key][i].name;
                 var city = promiseObj[key][i].city;
                 var division = promiseObj[key][i].division;
+
+                
+
                 var badge = document.createElement('div');
-                badge.className = 'badge';
+                badge.className = 'badge col-sm-3 card text-white bg-info mb-2 mt-2 ml-2 mr-2 mb-2 pt-2 pl-2 pr-2style="max-width: 18rem;" ';
                 badge.innerHTML =
-                    '<h1>' + teamName + '</h1>' +
-                    '<h2>' + city + '</h1>' +
                     
+                    '<h1 class="card-header">' + teamName + '</h1>' +
+                    '<h3 class="card-text">' + city + '</h3>' +
+                    '<h3 class="card-text">' + division + '</h3>'
+                    
+
                 //I gave the div the same ID's as the keys in the object for ease
                 document.getElementById(key).appendChild(badge);
             }
         }
     }
+
+    function getRandomTeam(){
+
+
+
+        
+    }
+
     getTeams();
 
+    getRandomTeam();
+
     
     
     
-   // console.log(promiseObj.data[0].city);
-    //console.log(promiseObj.data[3].full_name);
-
-
-
-
+    
