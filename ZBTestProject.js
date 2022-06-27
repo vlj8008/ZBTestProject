@@ -23,11 +23,12 @@ async function getTeams(){
                 badge.className = 'badge col-sm-3 card text-white bg-info mb-2 mt-2 ml-2 mr-2 mb-2 pt-2 pl-2 pr-2style="max-width: 18rem;" ';
                 badge.innerHTML =
                     
-                    '<h1 class="card-header">' + teamName + '</h1>' +
-                    '<h3 class="card-text">' + city + '</h3>' +
-                    '<h3 class="card-text">' + division + '</h3>'
+                    '<h3 class="card-header" >' + teamName + '</h3>' +
+                    '<h5 class="card-text">' + city + '</h5>' +
+                    '<h5 class="card-text">' + division + '</h5>'
                     
                 document.getElementById(key).appendChild(badge);
+                
             }
         }
     }
